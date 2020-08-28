@@ -10,7 +10,8 @@
         [DateTime] $DateFrom,
         [DateTime] $DateTo,
         [switch] $AddMarkdown,
-        [switch] $Format
+        [switch] $Format,
+        [switch] $Unblock
     )
     if (-not $Events) {
         $getEventsSplat = [ordered] @{
@@ -126,6 +127,10 @@
             ) | Out-File -FilePath $FilePath
         } else {
             $Script | Out-File -FilePath $FilePath
+        }
+        if (-not $Unblock) {
+            $data = [System.Text.StringBuilder]::new().AppendLine('[ZoneTransfer]').Append('ZoneId=3').ToString()
+            Set-Content -Path $FilePath -Stream "Zone.Identifier" -Value $data
         }
     }
 }
