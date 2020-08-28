@@ -19,6 +19,24 @@
 
 # PowerShellRestore
 
+Little PowerShell module to extract PowerShell scripts that no longer exists on disk but were run and are still in Event Logs.
+
+# Usage
+
+Extracing PowerShell scripts from Windows PowerShell Event Log and saving it to ScriptsLocal directory in same folder.
+Format makes sure the script is formatted and, and AddMarkdown adds additional information to asses where the script is coming from.
+
+```powershell
+Restore-PowerShellScript -Type WindowsPowerShell -Path $PSScriptRoot\ScriptsLocal -Verbose -Format -AddMarkdown
+```
+
+Same as above but with a difference that it scans remote servers (two of them). It does it in parallel.
+
+```powershell
+# Keep in mind AD1/AD2 will do it in parallel
+Restore-PowerShellScript -Type WindowsPowerShell -Path $PSScriptRoot\ScriptsRemote -ComputerName AD1, AD2 -Verbose -Format -AddMarkdown
+```
+
 ## To install
 
 Just install module from PowerShellGallery.
