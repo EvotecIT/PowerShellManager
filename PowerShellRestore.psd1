@@ -6,7 +6,7 @@
     Copyright            = '(c) 2011 - 2020 Przemyslaw Klys @ Evotec. All rights reserved.'
     Description          = 'Project that help restoring malware / run / deleted scripts straight from Event Logs for further analysis'
     FunctionsToExport    = 'Restore-PowerShellScript'
-    GUID                 = 'eb76426a-1992-40a5-82cd-6480f883ef4d'
+    GUID                 = '6923c0eb-f0d0-4c5d-a900-38a15fbace8c'
     ModuleVersion        = '0.1.1'
     PowerShellVersion    = '5.1'
     PrivateData          = @{
