@@ -59,5 +59,7 @@ That's it. Whenever there's a new version, you run the command, and you can enjo
 
 ## Changelog
 
+- 0.1.1 - 2020.08.28
+  - Additional security (prevents from accidental execution)
 - 0.1.0 - 2020.08.28
   - First release
