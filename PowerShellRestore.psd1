@@ -7,7 +7,7 @@
     Description          = 'Project that help restoring malware / run / deleted scripts straight from Event Logs for further analysis'
     FunctionsToExport    = 'Restore-PowerShellScript'
     GUID                 = '6923c0eb-f0d0-4c5d-a900-38a15fbace8c'
-    ModuleVersion        = '0.1.1'
+    ModuleVersion        = '0.1.2'
     PowerShellVersion    = '5.1'
     PrivateData          = @{
         PSData = @{
