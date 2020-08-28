@@ -4,14 +4,14 @@
     CompanyName          = 'Evotec'
     CompatiblePSEditions = 'Desktop', 'Core'
     Copyright            = '(c) 2011 - 2020 Przemyslaw Klys @ Evotec. All rights reserved.'
-    Description          = 'Simple project allowing preparing, managing and publishing modules to PowerShellGallery'
+    Description          = 'Project that help restoring malware / run / deleted scripts straight from Event Logs for further analysis'
     FunctionsToExport    = 'Restore-PowerShellScript'
     GUID                 = 'eb76426a-1992-40a5-82cd-6480f883ef4d'
     ModuleVersion        = '0.1.1'
     PowerShellVersion    = '5.1'
     PrivateData          = @{
         PSData = @{
-            Tags       = 'Windows', 'MacOS', 'Linux', 'Build', 'Module'
+            Tags       = 'Windows', 'Restore', 'PowerShellScript', 'Malware', 'EventLog'
             ProjectUri = 'https://github.com/EvotecIT/PowerShellRestore'
         }
     }
