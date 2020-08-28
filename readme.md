@@ -1,14 +1,14 @@
 ﻿<p align="center">
-  <a href="https://www.powershellgallery.com/packages/PowerShellRestore"><img src="https://img.shields.io/powershellgallery/v/PowerShellRestore.svg"></a>
-  <a href="https://www.powershellgallery.com/packages/PowerShellRestore"><img src="https://img.shields.io/powershellgallery/vpre/PowerShellRestore.svg?label=powershell%20gallery%20preview&colorB=yellow"></a>
-  <a href="https://github.com/EvotecIT/PowerShellRestore"><img src="https://img.shields.io/github/license/EvotecIT/PowerShellRestore.svg"></a>
+  <a href="https://www.powershellgallery.com/packages/PowerShellManager"><img src="https://img.shields.io/powershellgallery/v/PowerShellManager.svg"></a>
+  <a href="https://www.powershellgallery.com/packages/PowerShellManager"><img src="https://img.shields.io/powershellgallery/vpre/PowerShellManager.svg?label=powershell%20gallery%20preview&colorB=yellow"></a>
+  <a href="https://github.com/EvotecIT/PowerShellManager"><img src="https://img.shields.io/github/license/EvotecIT/PowerShellManager.svg"></a>
 </p>
 
 <p align="center">
-  <a href="https://www.powershellgallery.com/packages/PowerShellRestore"><img src="https://img.shields.io/powershellgallery/p/PowerShellRestore.svg"></a>
-  <a href="https://github.com/EvotecIT/PowerShellRestore"><img src="https://img.shields.io/github/languages/top/evotecit/PowerShellRestore.svg"></a>
-  <a href="https://github.com/EvotecIT/PowerShellRestore"><img src="https://img.shields.io/github/languages/code-size/evotecit/PowerShellRestore.svg"></a>
-  <a href="https://www.powershellgallery.com/packages/PowerShellRestore"><img src="https://img.shields.io/powershellgallery/dt/PowerShellRestore.svg"></a>
+  <a href="https://www.powershellgallery.com/packages/PowerShellManager"><img src="https://img.shields.io/powershellgallery/p/PowerShellManager.svg"></a>
+  <a href="https://github.com/EvotecIT/PowerShellManager"><img src="https://img.shields.io/github/languages/top/evotecit/PowerShellManager.svg"></a>
+  <a href="https://github.com/EvotecIT/PowerShellManager"><img src="https://img.shields.io/github/languages/code-size/evotecit/PowerShellManager.svg"></a>
+  <a href="https://www.powershellgallery.com/packages/PowerShellManager"><img src="https://img.shields.io/powershellgallery/dt/PowerShellManager.svg"></a>
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
   <a href="https://www.linkedin.com/in/pklys"><img src="https://img.shields.io/badge/LinkedIn-pklys-0077B5.svg?logo=LinkedIn"></a>
 </p>
 
-# PowerShellRestore
+# PowerShellManager
 
 Little PowerShell module to extract PowerShell scripts that no longer exists on disk but were run and are still in Event Logs.
 
@@ -42,7 +42,7 @@ Restore-PowerShellScript -Type WindowsPowerShell -Path $PSScriptRoot\ScriptsRemo
 Just install module from PowerShellGallery.
 
 ```powershell
-Install-Module -Name PowerShellRestore -AllowClobber -Force
+Install-Module -Name PowerShellManager -AllowClobber -Force
 ```
 
 Force and AllowClobber aren't necessary, but they do skip errors in case some appear.
@@ -50,7 +50,7 @@ Force and AllowClobber aren't necessary, but they do skip errors in case some ap
 ## And to update
 
 ```powershell
-Update-Module -Name PowerShellRestore
+Update-Module -Name PowerShellManager
 ```
 
 That's it. Whenever there's a new version, you run the command, and you can enjoy it. Remember that you may need to close, reopen PowerShell session if you have already used module before updating it.
@@ -61,5 +61,4 @@ That's it. Whenever there's a new version, you run the command, and you can enjo
 
 - 0.1.1 - 2020.08.28
   - Additional security (prevents from accidental execution)
-- 0.1.0 - 2020.08.28
   - First release
