@@ -59,6 +59,8 @@ That's it. Whenever there's a new version, you run the command, and you can enjo
 
 ## Changelog
 
+- 0.1.2 - 2021.01.19
+  - Fix for reading from file system
 - 0.1.1 - 2020.08.28
   - Additional security (prevents from accidental execution)
   - First release
