@@ -27,10 +27,10 @@
         } elseif ($Type -eq 'PowerShell') {
             $getEventsSplat['LogName'] = 'PowerShellCore/Operational'
         }
-        if ($EventLogPath) {
-            Path = $EventLogPath
+        if ($EventLogPath -and (Test-Path -LiteralPath $EventLogPath)) {
+            $getEventsSplat['Path'] = $EventLogPath
         }
-        $Events = Get-Events @getEventsSplat -Verbose:$VerbosePreference
+        $Events = Get-Events @getEventsSplat -Verbose:$VerbosePreference -DisableParallel
     }
     $FormatterSettings = @{
         IncludeRules = @(
