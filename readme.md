@@ -19,7 +19,7 @@
 
 # PowerShellManager
 
-Little PowerShell module to extract PowerShell scripts that no longer exists on disk but were run and are still in Event Logs.
+Little PowerShell module to extract PowerShell scripts that no longer exists on disk but were run and are still in Event Logs. More information [available on blog post](https://evotec.xyz/restoring-recovering-powershell-scripts-from-event-logs/).
 
 # Usage
 
